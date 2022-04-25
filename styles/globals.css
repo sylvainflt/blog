@@ -9,8 +9,118 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  margin: 0 20px;
 }
 
 * {
   box-sizing: border-box;
+}
+form{
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+label
+{
+	width: 150px;
+	float: left;
+}
+
+main{
+  margin: 0 auto;
+  width: 80%;
+  min-height: 700px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+.mainPannel{
+  width: 40%;
+  min-height: 700px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.sidePannel{
+  border: 1px solid black;
+  width: 40%;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+.pannels{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+button{
+  display: block;
+  margin: 15px auto 0px;
+  background-color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+button:hover{
+  border: 1px solid black;
+  text-decoration: none;
+  outline: none;
+  transition: .5s;
+  transform: scale(1.2);
+}
+.articlesBox{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.articleBox{
+  margin: 25px;
+  padding: 25px;
+  border: solid 1px;
+  box-shadow: 0 0 20px 10px #2020205c;
+  text-align: center;
+}
+.textStroke{
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.textStroke:hover{
+  color: black;
+  -webkit-text-stroke: 1px black;
+}
+h1{
+  text-align: center;
+}
+.articleBox textarea{
+  margin-top: 10px;
 }
