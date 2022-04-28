@@ -24,15 +24,16 @@ function LogginForm() {
     api
       .post("/login", postData)
       .then((res) => {
-        router.push({
+        /*router.push({
           pathname: "/",
-        });
+        });*/
         setMessage("vous êtes loggé");
         setSubmitted(true);
         setLogged(true);
       })
       .catch((err) => {
         console.log(err.toJSON());
+        console.log('ici');
         setMessage("veuillez vérifier vos identifiants");
         setSubmitted(true);
         setLogged(false);
@@ -76,6 +77,12 @@ function LogginForm() {
         </div>
         <div>
           <button type="submit">Envoyer</button>
+        </div>
+        <div hidden={!submitted}>{message}</div>
+        <div hidden={!logged}>
+          <Link href="/articles/articles">Voir les articles</Link>
+
+          <Link href="/users/users">Voir les utilisateurs</Link>
         </div>
       </form>
     </>

@@ -1,8 +1,8 @@
 import api from "../../components/utils/AxiosInstance";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-function updateArticle() {
+function UpdateArticle() {
   const [articles, setArticles] = useState([]);
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState();
@@ -20,6 +20,7 @@ function updateArticle() {
         console.log(err);
       });
   }
+  
   useEffect(() => {
     getArticles();
   }, []);
@@ -95,4 +96,4 @@ function updateArticle() {
   );
 }
 
-export default updateArticle;
+export default UpdateArticle;

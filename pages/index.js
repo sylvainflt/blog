@@ -16,12 +16,7 @@ function HomePage() {
         <h1 className="textStroke">Le blog de Sylvain</h1>
         <Link href="/loggin/logginForm">Se Logger</Link>
 
-        <div hidden={!submitted}>{message}</div>
-        <div hidden={!logged}>
-          <Link href="/articles/articles">Voir les articles</Link>
-
-          <Link href="/users/users">Voir les utilisateurs</Link>
-        </div>
+        
       </main>
     </>
   );
