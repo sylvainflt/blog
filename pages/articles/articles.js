@@ -29,23 +29,19 @@ function Articles() {
       </header>
       <div className="pannels">
         <div className="mainPannel">
-          <h2>Liste des articles</h2>
           <div className="articlesBox">
             {articles.map((article) => (
-              <div key={article.id} className="articleBox">
-                <p>{article.id}</p>
+              <div key={article.id} className={article.subHead}>
                 <h3>{article.title}</h3>
-                <h4>{article.subHead}</h4>
                 <p>{article.text}</p>
               </div>
             ))}
           </div>
         </div>
         <div className="sidePannel">
-          <h2>Ajout/Suppression/Modification</h2>
-          <Link href="./addArticle">ajouter un article</Link>
-          <Link href="./deleteArticle">supprimer un article</Link>
-          <Link href="./updateArticle">modifier un article</Link>
+          <Link href="./addArticle">Ajouter un article</Link>
+          <Link href="./deleteArticle">Supprimer un article</Link>
+          <Link href="./updateArticle">Modifier un article</Link>
         </div>
       </div>
     </>

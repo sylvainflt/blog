@@ -13,8 +13,7 @@ function HomePage() {
   return (
     <>
       <main>
-        <h1 className="textStroke">Le blog de Sylvain</h1>
-        <Link href="/loggin/logginForm">Se Logger</Link>
+        <h1 className="textStroke index"><Link href="/loggin/logginForm">Stickers</Link></h1>
 
         
       </main>

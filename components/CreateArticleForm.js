@@ -63,7 +63,7 @@ function CreateArticleForm() {
           ></input>
         </div>
         <div className="lineForm">
-          <label htmlFor="subHead">Sous titre</label>
+          <label htmlFor="subHead">forme</label>
           <input
             type="text"
             id="subHead"
