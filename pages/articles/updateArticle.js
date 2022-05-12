@@ -61,7 +61,7 @@ function UpdateArticle() {
         <form>
           {articles.map((article) => (
             <div key={article.id} className="articleBox">
-              <label>{article.id}</label>
+              
               <input
                 type="text"
                 defaultValue={article.title}

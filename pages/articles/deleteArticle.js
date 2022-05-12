@@ -46,9 +46,8 @@ function DeleteArticle() {
       <div hidden={!submitted}>{message}</div>
       <div className="articlesBox">
         {articles.map((article) => (
-          <div key={article.id} className="articleBox">
+          <div key={article.id} className={article.subHead}>
             <p>{article.title}</p>
-            <p>{article.subHead}</p>
             <p>{article.text}</p>
             <button onClick={() => deleteArticle(article.id)}>Supprimer</button>
           </div>

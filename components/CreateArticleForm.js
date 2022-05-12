@@ -64,14 +64,15 @@ function CreateArticleForm() {
         </div>
         <div className="lineForm">
           <label htmlFor="subHead">forme</label>
-          <input
-            type="text"
+          <select
             id="subHead"
-            value={subHead}
             onChange={(e) => {
               setSubHead(e.target.value);
             }}
-          ></input>
+          ><option value=""></option>
+            <option value="square">square</option>
+            <option value="circle">circle</option>
+            </select>
         </div>
         <div className="lineForm">
           <label htmlFor="text">Texte</label>
